@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.header{
+    max-width:1200px;
+    margin:10px auto;
+    background:#0F172A;
+    border-radius:50px;
+    position:sticky;
+    top:15px;
+    z-index:1000;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 35px;
+} 
+
+.logo {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+.nav-link a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+.nav-link a:hover{
+    color: #FACC15;
+}
+
+.theme-toggle{
+    width:55px;
+    height:30px;
+    border-radius:50px;
+    background:#ffffff22;
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
+    border:none;    
+}
+
+.circle{
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:white;
+    position:absolute;
+    left:4px;
+    top:4px;
+    transition: all 0.3s ease;
+}
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+}
+
+.hamburger span{
+    width:25px;
+    height:3px;
+    background:white;
+    border-radius:5px;
+}
+
+
+
+
+
+
+/* Mobile */
+@media(max-width:576px){
+.header{
+    width:95%;
+    margin:10px auto;
+    border-radius:15px;
+    }
+
+.nav{
+    padding:18px;
+}
+
+.logo{
+    font-size:20px;
+}
+
+.theme-toggle{
+    display:none;
+}
+
+.hamburger{
+
+    display:flex;
+
+}
+
+.nav-link{
+    display:none;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#0F172A;
+    flex-direction:column;
+    text-align:center;
+    padding:20px 0;
+    gap:20px;
+    border-radius:15px;
+}
+
+.nav-link.active{
+    display:flex;
+}
+
+.nav-item{
+     width:90%;
+    padding-bottom:15px;
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+}
+}
+
+/* Tablet */
+@media(max-width:768px){
+  .header{
+    width:95%;
+
+     }
+
+.nav{
+    padding:18px 25px;
+}
+
+.nav-link{
+    gap:25px;
+}
+
+.logo{
+ font-size:20px;
+
+}
+
+}
+
+
+
+@media(min-width:993px) and (max-width:1199px){
+
+.header{
+    width:95%;
+}
+
+.nav-link{
+    gap:30px;
+}
+}
+
+/* Desktop */
+@media(min-width:1200px){
+    .header{
+    max-width:1200px;
+   }
+}
