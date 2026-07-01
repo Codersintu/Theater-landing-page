@@ -125,6 +125,63 @@ body{
     color:#0F172A;
 }
 
+.services{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 35px;
+}
+.services h2{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    color:blue;
+    font-size:30px;
+
+}
+
+.about-content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+    border:1px solid rgba(0,0,0,.05);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card-header{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:20px;
+}
+
+.icon{
+    font-size:2rem;
+}
+
+.card p{
+    margin:15px 0;
+    color:#555;
+}
+
+.card a{
+    text-decoration:none;
+    color:#2563EB;
+    font-weight:600;
+}
+
 
 
 
