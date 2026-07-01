@@ -39,9 +39,20 @@ services.forEach((service) => {
 const hamburger = document.getElementById("hamburger");
 
 const nav = document.querySelector(".nav-link");
-
+const toggle = document.getElementById("theme-toggle");
 hamburger.addEventListener("click",()=>{
 
     nav.classList.toggle("active");
+
+});
+
+
+
+
+toggle.addEventListener("click", () => {
+    toggle.classList.toggle("active");
+
+    document.body.classList.toggle("dark");
+
 
 });

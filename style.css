@@ -6,9 +6,94 @@
 
 body{
     font-family:Arial, Helvetica, sans-serif;
+    background:#ffffff;
+    color:#111827;
+    transition:all .4s ease;
+
 }
 
+body.dark{
 
+    background:#0F172A;
+
+    color:white;
+
+}
+body.dark{
+    background:#0F172A;
+    color:#F8FAFC;
+}
+
+/* Navbar */
+
+body.dark .header{
+    background:#111827;
+}
+
+/* Navigation */
+
+body.dark .nav-link a{
+    color:#F8FAFC;
+}
+
+body.dark .nav-link a:hover{
+    color:#FACC15;
+}
+
+/* Hero */
+
+body.dark .hero{
+    background:#0F172A;
+}
+
+body.dark .hero h1{
+    color:white;
+}
+
+body.dark .hero p{
+    color:#CBD5E1;
+}
+
+/* About */
+
+body.dark .about{
+    background:#0F172A;
+}
+
+body.dark .about h2{
+    color:white;
+}
+
+/* Cards */
+
+body.dark .card{
+    background:#1E293B;
+    color:white;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+body.dark .card p{
+    color:#CBD5E1;
+}
+
+body.dark .card a{
+    color:#60A5FA;
+}
+
+/* Footer */
+
+body.dark .footer{
+    background:#020617;
+}
+
+body.dark .footer p{
+    color:#CBD5E1;
+}
+
+body.dark .social-links a{
+    color:white;
+    border-color:#475569;
+}
 .header{
     max-width:1200px;
     margin:10px auto;
@@ -53,23 +138,37 @@ body{
 .theme-toggle{
     width:55px;
     height:30px;
+    border:none;
     border-radius:50px;
-    background:#ffffff22;
+    background:#ffffff33;
     position:relative;
     cursor:pointer;
-    overflow:hidden;
-    border:none;    
+    transition:all .3s ease;
 }
 
 .circle{
+    position:absolute;
     width:22px;
     height:22px;
     border-radius:50%;
     background:white;
-    position:absolute;
-    left:4px;
     top:4px;
-    transition: all 0.3s ease;
+    left:4px;
+    transition:all .3s ease;
+}
+
+
+
+.theme-toggle.active{
+
+    background:#2563EB;
+
+}
+
+.theme-toggle.active .circle{
+
+    left:29px;
+
 }
 
 .hamburger{
@@ -204,7 +303,6 @@ body{
     inset:0;
 
     background-image:
-
         linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
 
         linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
