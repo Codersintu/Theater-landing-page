@@ -9,16 +9,8 @@ body{
     background:#ffffff;
     color:#111827;
     transition:all .4s ease;
-
 }
 
-body.dark{
-
-    background:#0F172A;
-
-    color:white;
-
-}
 body.dark{
     background:#0F172A;
     color:#F8FAFC;
